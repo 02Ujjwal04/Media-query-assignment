@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Assugnment</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 2px;
+            padding: 2px;
+            align-items: center;
+        }
+
+
+        .box1{
+            display: none;
+            height: 400px;
+            width: 400px;
+        }
+        .box2{
+            display: none;
+        }
+        .box3{
+            display: none;
+        }
+        .box4{
+            display: none;
+        }
+        @media screen and (max-width: 425px) {
+            .box1{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 425px) and (max-width: 768px) {
+            .box2{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .box3{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .box4{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1"><img src="./Desk.gif" alt="" height="425px" width="425px"></div>
+    <div class="box2"><img src="./download (1).gif" alt="" height="768px" width="768px"></div>
+    <div class="box3"><img src="./download.gif" alt="" height="1024px" width="1024px"></div>
+    <div class="box4"><img src="./Job opening.gif" alt="" height="1400px" width="1400px"></div> -->
+
+    <div class="box1"> <img src="./Desk.gif"></div>
+    <div class="box2"><img src="./download (1).gif"></div>
+    <div class="box3"><img src="./download.gif"></div>
+    <div class="box4"><img src="./Job opening.gif"></div>
+</body>
+
+</html>
